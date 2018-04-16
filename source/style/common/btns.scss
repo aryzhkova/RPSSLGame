@@ -1,0 +1,27 @@
+.btn{
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  outline: none;
+  color:black;
+  padding: 10px 15px;
+  border-radius: 7px;
+  font-size: 20px;
+  &_send_gesture{
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 15px;
+    transition: background-color 0.5s;
+    &:hover{
+      background-color: lightgreen;
+    }
+  }
+  &_say{
+    background: lightgreen;
+    transition: color 0.5s;
+    &:hover{
+      color:white;
+    }
+  }
+}

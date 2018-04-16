@@ -1,0 +1,113 @@
+html,body{
+  height:100%;
+}
+body{
+
+}
+.wrapper{
+  position: relative;
+  height: 100%;
+  min-width: 960px;
+  min-height: 950px;
+}
+.maincontent{
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+.header{
+  position: relative;
+  background: lightgrey;
+}
+.section{
+  position: relative;
+  min-height: 650px;
+}
+.container{
+  position: relative;
+  width: 960px;
+  margin: auto;
+  padding: 10px;
+}
+.title{
+  position:relative;
+  text-align: center;
+  &__text{
+    display: inline-block;
+    font-size: 40px;
+    max-width: 90%;
+  }
+}
+.content{
+  position: relative;
+  padding: 30px;
+  min-height: 500px;
+  &__text{
+    font-size: 25px;
+  }
+}
+.status{
+  position: relative;
+  height: 70px;
+  font-size: 25px;
+  padding: 12px;
+  font-weight: bold;
+  &__user{
+    position: relative;
+    color: red;
+  }
+  &__round{
+    position: relative;
+    text-align: center;
+    color: red;
+  }
+  &__game{
+    position: relative;
+    text-align: center;
+    color:lightgreen;
+  }
+}
+.footer{
+  position: relative;
+  height: 100px;
+  margin-top: -100px;
+  background: black;
+  &__text{
+    position: relative;
+    padding: 20px;
+    color:lightgrey;
+    text-align: center;
+    opacity: .7;
+  }
+}
+*{
+  box-sizing: border-box;
+}
+
+.hide{
+  display: none;
+}
+
+@keyframes size {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@keyframes opacity {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.2;
+  }
+  100%{
+    opacity: 1;
+  }
+}

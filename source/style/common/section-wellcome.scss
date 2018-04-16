@@ -1,0 +1,66 @@
+.link{
+  position: relative;
+  padding: 20px;
+  &__title{
+    color:blue;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+}
+.accept{
+  position: relative;
+  height: 100px;
+  padding: 20px;
+}
+
+.content__title{
+  position: relative;
+  font-size: 25px;
+}
+.rules{
+  position: relative;
+  padding-top: 20px;
+  font-size: 0;
+  text-align: center;
+  &__text{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    margin-right: 50px;
+    &:after{
+      display: block;
+      position: absolute;
+      content: "";
+      top:70%;
+      left:105%;
+      transform: translate(-50%,-50%);
+      border-left: 15px solid lightgreen;
+      border-bottom: 10px solid transparent;
+      border-top: 10px solid transparent;
+      border-right: 10px solid transparent;
+    }
+  }
+  &__pic{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+    width:400px;
+    height: 400px;
+    &__pic-img{
+      position: absolute;
+      display: block;
+      top:0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto;
+    }
+  }
+}
+
+
+

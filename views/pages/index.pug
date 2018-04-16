@@ -1,0 +1,65 @@
+extends ../_template
+
+block content
+    .wrapper
+        .maincontent
+            header.header
+                .container
+                    .title
+                        span.title__text Welcome to The Rock-Paper-Scissors-Spock-Lizard Online Game
+            .content
+                .container
+                    section.section.section_welcome( id="sectionWelcome")
+                        .content__text If you want to start the game send invite link to your friend.
+                        .link
+                            span.link__title #{link}
+                        .status.status_position_section_wellcome
+                            .status__user
+                        .accept.hide(id = "acceptDiv")
+                            a.btn.btn_accept_game(href="#" title="Accept game" id="accept") Accept game
+                        .rules
+                            .rules__text
+                                p Each player selects the gesture.
+                                p Gesture diagram on the right.
+                            .rules__pic
+                                img.rules__pic-img(src="./assets/img/gesture_diagram.png" alt="")
+                    section.section.section_game.hide( id="sectionGame")
+                        .content__text Choose one of gesture and click "Send".
+                        .status.status_position_section_game
+                            .status__round
+                            .status__game
+                        .timer
+                            .timer__count
+                        form.form( id="gestureForm" )
+                            .form__row.form__row_gesture
+                                label.form__label.form__label_paper
+                                    input.form__input.form__input_paper(name ="gesture" type="radio" value="paper")
+                            .form__row.form__row_gesture
+                                label.form__label.form__label_rock
+                                    input.form__input.form__input_rock(name ="gesture" type="radio" value="rock")
+                                label.form__label.form__label_scissors
+                                    input.form__input.form__input_scissors(name ="gesture" type="radio" value="scissors")
+                            .form__row.form__row_gesture
+                                label.form__label.form__label_spock
+                                    input.form__input.form__input_spock(name ="gesture" type="radio" value="spock")
+                                label.form__label.form__label_lizard
+                                    input.form__input.form__input_lizard(name ="gesture" type="radio" value="lizard")
+                            .form__row
+                                button.btn.btn_send_gesture(type="submit" id="send" name="send" form="gestureForm" ) Send
+                            .form__row
+                                .form__message
+                        .chat
+                            .messages
+                                ul.messages__list(id="messageList")
+                            form.chat-form(id="chatForm")
+                                input.chat-form__input(type='text' name="message" id="message")
+                                a.btn.btn_say(href="#" title="" id="say") Say
+        footer.footer
+            .container
+                .footer__text Test project
+
+
+
+
+
+

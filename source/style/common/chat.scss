@@ -1,0 +1,47 @@
+.chat{
+  position: absolute;
+  bottom:0;
+  right: 0;
+  width:300px;
+  height:300px;
+  background: lightgrey;
+  border-radius: 7px;
+  padding: 20px;
+}
+.messages{
+  position: relative;
+  padding: 20px;
+  border-radius: 7px;
+  margin: auto;
+  background: white;
+  width: 260px;
+  height: 200px;
+  overflow: auto;
+  &__list{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  &__item{
+    position: relative;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}
+.chat-form{
+  position: relative;
+  width:80%;
+  white-space: nowrap;
+  padding: 15px 0;
+  &__input{
+    font-size: 16px;
+    outline: none;
+    width:80%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 25px;
+  }
+}
+
